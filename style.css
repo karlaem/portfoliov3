@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #D7D7D7;
+}
+.margins{
+    width: 80%;
+    margin: 0 auto;
+}
+.container{
+    background-image: radial-gradient(circle farthest-corner at 15px 15px, rgba(244, 186, 149, 0.8) 0%, rgba(215, 215, 215, 0) 500px),radial-gradient(circle closest-side at 1600px 1000px, rgba(19, 13, 111, 0.8) 0%, rgba(215, 215, 215, 0) 1100px);
+
+}
+.hero{
+    height: 100vh;
+    position: relative;
+}
+.herotext{
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.herotext h1{
+    font-family: 'Antic Didone', serif;
+    font-size: 72px;
+    line-height: 1.5;
+}
+.herotext .tinytext{
+    font-size: 36px;
+}
