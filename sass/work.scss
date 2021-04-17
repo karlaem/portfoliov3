@@ -1,0 +1,64 @@
+// sass --watch sass/work.scss:css/work.css
+@import 'mixins';
+
+.workcontent{
+    width: 90%;
+    font-family: $primaryfont;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    img{
+        width: 100%;
+    }
+    @include ipad{
+        padding-top: 20px;
+    }
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    column-gap: 20px;
+    row-gap: 40px;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    h3{
+        font-family: $primaryfont;
+    }
+    p{
+        margin-top: 10px;
+        font-size: 16px;
+        font-family: $lightfont;
+    }
+}
+.navwork{
+    margin-top: 20px;
+    text-align: center;
+    a{
+        font-family: $primaryfont;
+        text-decoration: none;
+        color: white;
+        text-shadow: $shadow;
+        margin-right: 10px;
+    }
+    a:hover{
+        color: $azul;
+    }
+    h1{
+        font-family: $classicfont;
+        color: white;
+        text-shadow: $shadow;
+    }
+    @include phone{
+        margin-top: 240px;
+    }
+}
+.content{
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        color: $azul;
+    }
+}

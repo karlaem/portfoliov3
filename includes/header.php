@@ -8,6 +8,7 @@
 <!--css-->
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/darkmode.css">
+<link rel="stylesheet" href="css/work.css">
 
 
 <!--fonts-->
