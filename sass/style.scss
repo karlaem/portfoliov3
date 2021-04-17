@@ -20,7 +20,8 @@ body{
 input[type=checkbox] {
     height: 0;
     width: 0;
-    visibility: hidden;
+    opacity: 0;
+    /*visibility: hidden;*/
 }
 label {
     cursor: pointer;
@@ -48,6 +49,7 @@ label:after {
     top: 5px;
     left: 4px;
     transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
+    
 }
 input:checked + label {
     background: #FEC195;
@@ -102,6 +104,9 @@ html.transition, html.transition *, html.transition *:before, html.transition *:
     .herotext .tinytext{
         font-size: 24px;
     }
+    .switchcontainer{
+        display: block;
+    }
 }
 
 /* Use a media query to add a breakpoint at 800px: */
@@ -114,6 +119,9 @@ html.transition, html.transition *, html.transition *:before, html.transition *:
     }
     .container{
         background-image: radial-gradient(circle farthest-corner at 15px 15px, rgba(244, 186, 149, 0.8) 0%, rgba(215, 215, 215, 0) 300px),radial-gradient(circle closest-side at 600px 700px, rgba(19, 13, 111, 0.8) 0%, rgba(215, 215, 215, 0) 600px);
+    }
+    .switchcontainer{
+     display: none;
     }
   }
   /*mobile logo*/
@@ -150,3 +158,93 @@ html.transition, html.transition *, html.transition *:before, html.transition *:
         display: block;
       }
 }
+
+// navigation
+/*menuToggle*/
+#menuToggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 100%;
+    @include desktop{
+      display: none;
+    }
+  }
+  #menuToggle a {
+    color: $azuloscuro;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: center;
+    font-size: 21px;
+    font-family: $primaryfont;
+  }
+  #menuToggle a:hover {
+    color: $azul;
+  }
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -2px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+  }
+  #menuToggle span {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: $blanco;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background:$morado;
+  }
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+  #menu {
+    position: absolute;
+    width: 100%;
+    margin: -100px 0 0 -10%;
+    padding: 20px;
+    padding-top: 125px;
+    background:$blanco2;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  #menu li {
+    padding: 10px 0;
+    font-size: 1em;
+  }
