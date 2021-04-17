@@ -20,6 +20,7 @@
                     <h1 class="tinytext">Hello I'm Karla Mercado</h1>
                     <h1>I’m a creative front-end developer looking to work at an agency and eager to bring projects to life through thoughtful design solutions.</h1>
                     <a  href="#" class="cta">Contact me</a>
+                    <img class="rightimg" src="imgs/Phone.gif" alt="hand with phone gif animation made by karla">
                 </div>
             </div>
         </div>
