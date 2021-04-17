@@ -23,6 +23,11 @@
             </div>
         </div>
     </div>
+    <?php
+// Navigation
+$homeActive = "active";
+include("includes/nav.php");
+?>   
     <script src="js/main.js"></script>
 </body>
 </html>

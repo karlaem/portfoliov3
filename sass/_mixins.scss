@@ -1,0 +1,71 @@
+@mixin desktop {
+    @media (min-width: 800px) {
+    @content;
+    }
+}
+@mixin phone {
+    @media (max-width:800) {
+    @content;
+    }
+}
+
+//fonts
+$primaryfont: 'geomanistregular';
+$italicfont: 'geomanistitalic'; 
+$boldfont:  'geomanistbold';
+$lightfont: 'geomanistlight';
+$ultrafont: 'geomanistultra';
+$titlefont:'geomanistregular';
+
+// colors
+$morado:#0D0745;
+$azuloscuro:#130D6F;
+$azul:#5E72EB;
+$rosa:#FF9190;
+$naranja:#FEC195;
+$gris:#a3a3a3;
+$blanco:#FCFCFC;
+
+$lightgrey:#EEEFF1;
+$patches:#2A3380;
+$patcheshover:#C97E09;
+$patchescolor:#2A3380;
+$patchesground:#C5AB8F;
+$patchespath:#E9DFD4;
+$patcheswhite:#F9F9FF;
+$patcheswind:#EDEFF1;
+$patchesair:#EBEAE3;
+
+$scoop: #FFA8A7;
+$scoophover:#4AB0B2;
+$scoopcolor:#A47A53;
+$scoopgreen:#A5C379;
+$scooporange:#F4C68A;
+$scoopyellow:#F9EEA0;
+$scooplight:#F4F0ED;
+
+$secret:#558EC5;
+$secrethover:#F8D68C;
+$secretblack:#4C4C4C;
+$secretpurple:#ABA5EB;
+
+
+$lilapink:#FF7B89;
+$lilap1:#8A5082;
+$lilap2:#705F93;
+$lilab1:#758EB7;
+$lilab2:#A5CAD2;
+
+$thedresswhite:#DEE4E2;
+$thedressyellow:#E0DD36;
+$thedress:#29E1B9;
+$thedressgreen:#35E32A;
+$thedressmagenta:#DC2EE7;
+$thedresshover:#D82731;
+$thedressblue:#1F25DD;
+$thedresspurple:#410479;
+$thedressblack:#242424;
+
+$dd:#1FA397;
+$ddhover:#01766D;
+$ddlight:#69DDD0;
