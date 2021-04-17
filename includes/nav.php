@@ -15,36 +15,33 @@ $contactActive = (isset($contactActive)) ? $contactActive : "";
 
 <!--responsive menu-->
 <div class="fixedtop">
-        <nav role="navigation">
-            <a data-nav="home" href="index.php" class="tinylogo"><img src="imgs/logows.svg" alt="Karla Mercado Portfolio Logo"></a>
-            <div id="menuToggle">
-                <input type="checkbox"/>
-                <span></span>
-                <span></span>
-                <span></span>
+    <nav role="navigation">
+        <a data-nav="home" href="index.php" class="tinylogo"><img src="imgs/logows.svg" alt="Karla Mercado Portfolio Logo"></a>
+        <div id="menuToggle">
+            <input type="checkbox"/>
+            <span></span>
+            <span></span>
+            <span></span>
 
-                <ul id="menu">
-                    <?php
-                    //show regular menu
-                    foreach ($arrMenu as $key => $nav) {
-                    ?>
-                    <a href="<?=$nav["link"]?>"><li><?=$nav["menu"]?></li></a>
-                    <?php
-                    }
-                    ?>
-                </ul>
-            </div>
-        </nav><!--end of nav-->
+            <ul id="menu">
+                <?php
+                //show regular menu
+                foreach ($arrMenu as $key => $nav) {
+                ?>
+                <a href="<?=$nav["link"]?>"><li><?=$nav["menu"]?></li></a>
+                <?php
+                }
+                ?>
+            </ul>
+        </div>
+    </nav><!--end of nav-->
 </div>
 
 <!--main menu-->
 
+
 <div class="leftnav">
     <div class="nav">
-        <!--optimized for seo, adding the logo h1 fist and the the nav-->
-        <div class="logo">
-            <a href="index.php" data-nav="home"><h1>Karla Mercado web developer digital animator and artist</h1></a>
-        </div><!-- .logo -->
         <div class="menuRegular">
             <div class="nav">
                 <a href="index.php" data-nav="home">Home</a>
@@ -55,3 +52,10 @@ $contactActive = (isset($contactActive)) ? $contactActive : "";
         </div> 
     </div><!--.nav-->
 </div>
+     
+<div class="logo">
+    <a href="index.php" data-nav="home"><h1>Karla Mercado web developer digital animator and artist</h1></a>
+</div><!-- .logo -->
+
+
+

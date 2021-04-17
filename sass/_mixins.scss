@@ -4,7 +4,12 @@
     }
 }
 @mixin phone {
-    @media (max-width:800) {
+    @media (max-width:800px) {
+    @content;
+    }
+}
+@mixin ipad {
+    @media (max-width:1300px) {
     @content;
     }
 }
