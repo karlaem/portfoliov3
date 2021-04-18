@@ -6,30 +6,36 @@
     font-family: $primaryfont;
     margin: 0 auto;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     img{
         width: 100%;
     }
     @include ipad{
         padding-top: 20px;
     }
+    @include desktop{
+        margin-bottom: 100px;
+    }
 }
 .cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
     column-gap: 20px;
     row-gap: 40px;
     a{
         text-decoration: none;
         color: white;
+        text-shadow: $shadow;
     }
     h3{
         font-family: $primaryfont;
+        text-shadow: $shadow;
     }
     p{
         margin-top: 10px;
         font-size: 16px;
         font-family: $lightfont;
+        text-shadow: $shadow;
     }
 }
 .navwork{
@@ -53,6 +59,7 @@
     @include phone{
         margin-top: 240px;
     }
+    
 }
 .content{
     a{

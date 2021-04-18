@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/darkmode.css">
 <link rel="stylesheet" href="css/work.css">
+<link rel="stylesheet" href="css/about.css">
 
 
 <!--fonts-->
@@ -16,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
 
 <!--favicon-->
 <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-touch-icon.png">

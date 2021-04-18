@@ -246,6 +246,14 @@ html.transition, html.transition *, html.transition *:before, html.transition *:
   padding: 15px;
   font-size: 18px;
 }
+.leftnav .menuRegular .highlighted {
+  text-decoration: underline;
+  text-decoration-color: #FEC195;
+  text-decoration-thickness: 2px;
+}
+.leftnav .menuRegular .highlighted:hover {
+  text-decoration-color: #5E72EB;
+}
 .leftnav .menuRegular a:hover {
   color: #5E72EB;
 }

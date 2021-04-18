@@ -219,6 +219,14 @@ html.transition, html.transition *, html.transition *:before, html.transition *:
       padding: 15px;
       font-size: 18px;
     }
+    .highlighted{
+      text-decoration: underline;
+      text-decoration-color: $naranja;
+      text-decoration-thickness: 2px;
+    }
+    .highlighted:hover{
+      text-decoration-color: $azul;
+    }
     a:hover{
       color: $azul;
     }
@@ -227,6 +235,7 @@ html.transition, html.transition *, html.transition *:before, html.transition *:
     }
   }
 }
+
 
 //cta
 .cta{

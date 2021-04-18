@@ -1,0 +1,63 @@
+// sass --watch sass/about.scss:css/about.css
+@import 'mixins';
+
+@include desktop{
+    .about{
+        margin-bottom: 100px;
+        overflow: auto;
+    }
+    .left{
+        width: 50%;
+        float: left;
+    }
+    .right{
+        width: 50%;
+        float: right;
+    }
+}
+.about{
+    margin-bottom: 50px;
+    overflow: auto;
+}
+.about .download{
+    font-family: $classicfont;
+    color: white;
+    text-shadow: $shadow;
+    font-size: 21px;
+    text-decoration: underline;
+    text-decoration-color: $naranja;
+    text-decoration-thickness: 2px;
+}
+.about .download:hover{
+    text-decoration-color: $azul;
+    color: $azul;
+}
+h1{
+    font-family: $classicfont;
+    color: white;
+    text-shadow: $shadow;
+    margin-bottom: 20px;
+}
+p{
+    font-family: $primaryfont;
+    color: white;
+    text-shadow: $shadow;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-size: 21px;
+}
+.social{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.links{
+    font-family: $classicfont;
+    color: white;
+    text-shadow: $shadow;
+    font-size: 21px;
+}
+.links:hover{
+   color: $azul;
+}
