@@ -18,7 +18,7 @@ include("classes/Projectlist.php");
             <!--home-->
             <div class="switchcontainer">
                 <input class="container_toggle" type="checkbox" id="switch" name="mode"  onclick="myFunction()">
-                <label for="switch">Toggle</label>
+                <label class="slabel" for="switch">Toggle</label>
             </div>
             <div id="home" class="hero">
                 <div class="circle"></div>
@@ -93,6 +93,52 @@ include("classes/Projectlist.php");
             <div class="contact" id="contact">
                 <div class="left">
                     <h1>Contact me</h1>
+                    <div class="form">
+                        <form id="contactform"  method="post" action="sendemail.php" enctype="multipart/form-data" name="EmailForm">
+                            <div class="fieldgroup required">
+                                <input type="text" id="name" name="name" placeholder="Name">
+                                <div class="popup">   
+                                    <div class="arrow-up"></div>             
+                                    <p>Write your name</p>
+                                </div>   
+                            </div><!--.fieldgroup-->
+
+                            <div class="fieldgroup required">
+                                <input type="text" id="email" name="email" placeholder="Email">
+                                <div class="popup">         
+                                    <div class="arrow-up"></div>          
+                                    <p>Write your email</p>
+                                </div>   
+                            </div><!--.fieldgroup-->
+
+                            <div class="fieldgroup">
+                                <select name="subject">
+                                <option value="ksubject">Subject</option>
+                                    <option value="knowMore">Know more information</option>
+                                    <option value="resume">Ask for resume</option>
+                                    <option value="hire">Hire me &#128516;</option>
+                                    <option value="tips">Tips on coding, art or design</option>
+                                    <option value="question">Questions</option>
+                                <option value="chat">Chat</option>
+                                </select>
+                                <div class="popup">  
+                                    <div class="arrow-up"></div>                
+                                    <p>Write your name</p>
+                                </div>   
+                            </div><!--.fieldgroup-->
+
+                            <div class="fieldgroup required">
+        
+                                <textarea id="msg" name="msg" placeholder="Write something.."></textarea>
+                                <div class="popup">   
+                                    <div class="arrow-up"></div>               
+                                    <p>Write your Message</p>
+                                </div>  
+                            </div><!--.fieldgroup-->
+
+                            <input class="cta" type="submit" value="Send">
+                        </form>
+                    </div>
                 </div><!--.left-->
                 <div class="right"></div><!--.right-->
             </div><!--.contact-->
@@ -105,5 +151,6 @@ $homeActive = "active";
 include("includes/nav.php");
 ?>   
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/validate.js"></script>
 </body>
 </html>
