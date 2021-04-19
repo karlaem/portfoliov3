@@ -1,0 +1,151 @@
+.caselogo4 {
+  background-color: #242424;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  color: white;
+}
+.caselogo4 img {
+  margin: 0 auto;
+  width: 200px;
+  margin: 20px;
+}
+@media (max-width: 800px) {
+  .caselogo4 img {
+    width: 80%;
+    padding: 20px;
+  }
+}
+
+.colors #thedresswhite {
+  color: #242424;
+}
+.colors #thedresswhite .square {
+  background: #DEE4E2;
+}
+.colors #thedressyellow {
+  color: #E0DD36;
+}
+.colors #thedressyellow .square {
+  background: #E0DD36;
+}
+.colors #thedress {
+  color: #29E1B9;
+}
+.colors #thedress .square {
+  background: #29E1B9;
+}
+.colors #thedressgreen {
+  color: #35E32A;
+}
+.colors #thedressgreen .square {
+  background: #35E32A;
+}
+.colors #thedressmagenta {
+  color: #DC2EE7;
+}
+.colors #thedressmagenta .square {
+  background: #DC2EE7;
+}
+.colors #thedressred {
+  color: #D82731;
+}
+.colors #thedressred .square {
+  background: #D82731;
+}
+.colors #thedressblue {
+  color: #1F25DD;
+}
+.colors #thedressblue .square {
+  background: #1F25DD;
+}
+.colors #thedresspurple {
+  color: #410479;
+}
+.colors #thedresspurple .square {
+  background: #410479;
+}
+.colors #thedressblack {
+  color: #242424;
+}
+.colors #thedressblack .square {
+  background: #242424;
+}
+
+.intro a {
+  color: #0D0745;
+  font-size: 21px;
+  padding-right: 20px;
+}
+.intro a:hover {
+  color: #FF9190;
+}
+@media (max-width: 1300px) and (min-width: 800px) {
+  .intro {
+    margin-top: 50px;
+    font-size: 36px;
+  }
+}
+@media (min-width: 1300px) {
+  .intro h1 {
+    font-size: 80px;
+    margin-top: 50px;
+  }
+}
+.intro img {
+  height: 60vh;
+  object-fit: cover;
+  object-position: top;
+}
+@media (max-width: 800px) {
+  .intro img {
+    height: auto;
+  }
+}
+
+.casefonts4 h3 {
+  background-color: #242424;
+  color: white;
+  padding: 10px;
+}
+.casefonts4 .oswald {
+  font-family: "Oswald", sans-serif;
+}
+.casefonts4 .fontcontainer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 10px;
+}
+@media (max-width: 800px) {
+  .casefonts4 .fontcontainer {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 1300px) {
+  .casefonts4 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.col2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 20px;
+}
+.col2 .col .icon {
+  width: 50px;
+}
+@media (max-width: 800px) {
+  .col2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=dress.css.map */

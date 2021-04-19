@@ -1,0 +1,42 @@
+.container h1 {
+    color: #fff;
+    font-size: 42px;
+    margin: 0;
+}
+.title {
+    display: block;
+    float: left;
+    position: relative;
+}
+.title span {
+    display: block;
+    float: left;
+    min-width: 10px;
+    min-height: 10px;
+    position: relative;
+}
+.title:nth-child(1) {
+    color: black;
+}
+.title:nth-child(2) {
+    color: black;
+}
+.title:nth-child(3) {
+    color: black;
+}
+.title2{
+    margin-top: 100px;
+    display: none;
+}
+@media (max-width: 1300px) {
+.container{
+    display: none;
+}
+.title2{
+    display: block;
+    margin-top: 0px;
+    font-family: "geomanistregular";
+}
+}
+
+    

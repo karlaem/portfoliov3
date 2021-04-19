@@ -1,0 +1,57 @@
+.workcontent {
+  width: 90%;
+  margin-top: 50px;
+  font-family: "geomanistregular";
+}
+.workcontent h1 {
+  margin-bottom: 20px;
+}
+.workcontent img {
+  width: 100%;
+}
+@media (max-width: 1300px) and (min-width: 800px) {
+  .workcontent {
+    padding-top: 20px;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  column-gap: 20px;
+  row-gap: 40px;
+}
+.cards a {
+  text-decoration: none;
+  color: black;
+}
+.cards h3 {
+  font-family: "geomanistregular";
+}
+.cards p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: "geomanistlight";
+}
+
+.navwork {
+  margin-top: 20px;
+  font-family: "geomanistregular";
+}
+.navwork a {
+  text-decoration: none;
+  color: #5E72EB;
+  margin-right: 20px;
+}
+.navwork a:hover {
+  color: #FEC195;
+}
+
+.content a {
+  text-decoration: none;
+}
+.content a:hover {
+  color: #FEC195;
+}
+
+/*# sourceMappingURL=work.css.map */

@@ -1,0 +1,147 @@
+// sass --watch sass/scoop.scss:css/scoop.css
+@import 'mixins';
+
+
+.caselogo2{
+    background-color:$scooplight;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    img{
+        margin: 0 auto;
+        width: 300px;
+        margin-top: 20px;
+        @include phone{
+            width: 100%;
+        }
+    }
+}
+.colors{ 
+    #green{
+        .circle{
+            background: $scoopgreen;
+        }
+        color: $scoopgreen;
+    }
+    #pink{
+        .circle{
+            background: $scoop;
+        }
+        color: $scoop;
+    }
+    #orange{
+        .circle{
+            background: $scooporange;
+        }
+        color: $scooporange;
+    }
+    #bluescoop{
+        .circle{
+            background: $scoophover;
+        }
+        color: $scoophover;
+    }
+    #yellow{
+        .circle{
+            background: $scoopyellow;
+        }
+        color: $scoopyellow;
+    }
+    #brown{
+        .circle{
+            background: $scoopcolor;
+        }
+        color: $scoopcolor;
+    }
+   
+}
+.intro{
+    a{
+        color: $morado;
+        font-size: 21px;
+        padding-right: 20px;
+    }
+    a:hover{
+        color: $rosa;
+    }
+    @include ipad{
+        margin-top: 50px;
+        font-size: 36px;
+    }
+    @include desktop{
+        h1{
+            font-size: 80px;
+            margin-top: 50px;
+        }
+    }
+    img{
+        height: 60vh;
+        object-fit: cover;
+        object-position:top;
+        @include phone{
+            height: auto;
+        }
+    }
+}
+.casefonts2{
+    text-align: center;
+    h3{
+        background-color: $scooplight;
+        padding: 10px;
+    }
+    .oxygen{
+        font-family: 'Oxygen', sans-serif;
+    }
+    .aleo{
+        font-family: 'Aleo', serif;
+    }
+    .fontcontainer{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:15px;
+        padding: 10px;
+        @include phone{
+            grid-template-columns: 1fr;
+        }
+    }
+    @include desktop{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+.spoon{
+    object-fit: cover;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.col3{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+  margin-bottom: 20px;
+   img{
+       width: 100%;
+   }
+}
+.casepack{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    p{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    @include desktop{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+.casesticker{
+    @include desktop{
+        padding-bottom: 50px;
+    }
+}

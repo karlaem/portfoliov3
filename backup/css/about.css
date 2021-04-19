@@ -1,0 +1,157 @@
+.aboutcontent {
+  font-family: "geomanistregular";
+  margin-top: 50px;
+}
+.aboutcontent p {
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.aboutcontent h1 {
+  margin-bottom: 20px;
+}
+.aboutcontent h2 {
+  letter-spacing: 2px;
+}
+.aboutcontent svg {
+  fill: #5E72EB;
+  stroke: #5E72EB;
+  width: 15px;
+}
+.aboutcontent svg:hover {
+  stroke: #FF9190;
+}
+.aboutcontent .download {
+  text-decoration: none;
+  color: #0D0745;
+  padding: 10px;
+}
+.aboutcontent .download:hover {
+  color: #FF9190;
+}
+@media (min-width: 1300px) {
+  .aboutcontent {
+    width: 90%;
+  }
+}
+@media (max-width: 1300px) and (min-width: 800px) {
+  .aboutcontent {
+    padding-top: 20px;
+  }
+}
+
+.resume {
+  margin-bottom: 20px;
+}
+
+.process {
+  margin-bottom: 20px;
+}
+.process h2 {
+  margin-bottom: 10px;
+}
+.process li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+@media (min-width: 1300px) {
+  .process {
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+}
+.process .limage {
+  float: right;
+  width: 25%;
+}
+.process .limage img {
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .process .limage {
+    width: 100%;
+  }
+}
+.process .rimage {
+  padding-top: 20px;
+}
+
+.center2 {
+  text-align: center;
+}
+
+.skillcontainer {
+  margin-bottom: 20px;
+  padding: 0px;
+}
+.skillcontainer h3 {
+  letter-spacing: 1px;
+}
+.skillcontainer ul {
+  margin-bottom: 20px;
+}
+.skillcontainer li {
+  list-style: none;
+  padding-top: 10px;
+}
+@media (min-width: 1300px) {
+  .skillcontainer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .skillcontainer h3 {
+    margin-bottom: 10px;
+  }
+  .skillcontainer ul {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1300px) and (min-width: 800px) {
+  .skillcontainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .skillcontainer h3 {
+    margin-bottom: 10px;
+  }
+  .skillcontainer ul {
+    margin-bottom: 20px;
+  }
+}
+
+.containercenter {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (min-width: 1300px) {
+  .containercenter {
+    width: 60%;
+    margin-top: 20px;
+  }
+}
+
+.noleft {
+  clear: both;
+}
+
+.resume {
+  margin-bottom: 20px;
+}
+.resume svg {
+  fill: white;
+  stroke: #5E72EB;
+  width: 15px;
+}
+.resume svg:hover {
+  stroke: #FF9190;
+}
+
+/*# sourceMappingURL=about.css.map */

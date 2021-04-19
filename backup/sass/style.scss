@@ -1,0 +1,401 @@
+// sass --watch sass/style.scss:css/style.css
+@import 'mixins';
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.fixedtop{
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+body{
+  position: relative;
+  background-color: $blanco;
+}
+html{
+  background-color: $blanco;
+}
+#myWebApp{
+  background-color: $blanco;
+}
+.margins{
+  width: 80%;
+  margin: 0 auto;
+  @include phone{
+    width: 95%;
+  }
+  @include ipad{
+    width: 90%;
+  }
+}
+.marginleft{
+  margin-left: 15%;
+  @include ipad{
+    margin-left: 0px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  @include phone{
+    margin-left: 0px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.phonetop{
+  @include phone{
+    margin-top: 40px;
+  }
+}
+
+/*menuToggle*/
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 20px;
+  right: 0px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  width: 100%;
+  @include desktop{
+    display: none;
+  }
+  @include ipad{
+    display: none;
+    right: 15px;
+    width: 105%;
+  }
+}
+#menuToggle a {
+  color: $azuloscuro;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  text-align: center;
+  font-size: 21px;
+  font-family: $primaryfont;
+}
+#menuToggle a:hover {
+  color: $azul;
+}
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -2px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: $morado;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background:$morado;
+}
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+#menu {
+  position: absolute;
+  width: 120%;
+  margin: -100px 0 0 -40px;
+  padding: 20px;
+  padding-top: 125px;
+  background:$naranja;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+#menu li {
+  padding: 10px 0;
+  font-size: 1em;
+}  
+/*mobile logo*/
+.tinylogo img{
+  width: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  @include desktop{
+    display: none;
+  }
+  @include ipad{
+    display: block;
+  }
+}
+// left nav ***********************
+/*logo*/
+.logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100px;
+  h1{
+    background: url("../imgs/logomorado.svg");
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    text-indent: -9999px;
+  }
+  h1 a {
+    background-image: url("../imgs/logorosa.svg");
+    background-size: cover;
+  }
+}
+.leftnav{
+  display: block;
+  background-color: $naranja;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 10%;
+  height: 100vh;
+  letter-spacing: 2px;
+  transition-delay: 0s;
+  transition-duration: 0.4s;
+  transition-property: all;
+  transition-timing-function: line;
+  @include ipad{
+    display: none;
+  }
+  @include phone{
+    display: none;
+  }
+  .logo{
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .menuRegular{
+    position: absolute;
+    text-align: center;
+    font-size: 21px;
+    font-family: $titlefont;
+    top: 30%;  
+    left: 25%;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: line;
+    a{
+      text-decoration: none;
+      color: black;
+      display: block;
+      padding: 15px;
+      font-size: 18px;
+    }
+    a:hover{
+      color: $azul;
+    }
+    .active{
+      color: $azul;
+    }
+  }
+  .socialmedia{
+    position: absolute;
+    bottom: 20px;
+    padding: 20px;
+    left: 15%;
+    font-family: $primaryfont;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: line;
+    svg{
+      padding: 4px;
+      width: 25px;
+      fill:black;
+    }
+    svg:hover{
+      fill: $azul;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+      display: block;
+      display: inline;
+    }
+    a:hover{
+      color: $azul;
+    }
+    .active{
+      color: $azul;
+    }
+  }
+}
+.leftnav:hover{
+  width: 15%;
+  .menuRegular{
+    left: 35%;
+  }
+  .socialmedia{
+    left: 30%;
+  }
+}
+// home *************
+.homecontent{
+  width: 100%;
+  height:100vh;
+  position: relative;
+  @include desktop{
+    background-image: url(imgs/compuwire.gif);
+    background-color: $blanco;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size:  35% 50%;
+    background-position: bottom right;
+  }
+  @include ipad{
+    background-image: url(imgs/compuwire.gif);
+    background-color: $blanco;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size:  35% 50%;
+    background-position: bottom right;
+  }
+  .hometext{
+    position: absolute;
+    width: 80%;
+    top:20%; 
+    @include ipad{
+      position: absolute;
+      top:100px;
+    }
+    @include phone{
+      top: 50px;
+      width: 100%;
+    }
+  }
+  img{
+    display: none;
+    width: 100%;
+    @include phone{
+      display: block;
+    }
+    @include ipad{
+      display: none;
+    }
+  }
+  h2{
+    font-family: $primaryfont;
+    font-size: 60px;
+    @include ipad{
+      font-size: 36px;
+    }
+    @include phone{
+      font-size: 36px;
+    }
+  }
+  h1{
+    @include phone{
+      font-size: 21px;
+    }
+  }
+  .center3{
+    @include desktop{
+      margin-top: 80px;
+      margin-bottom: 20px;
+    }
+    @include ipad{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  h1{
+    font-family: $titlefont;
+  }
+}
+.cta{
+  font-size: 21px;
+  border: none;
+  padding: 10px 50px;
+  width: 300px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  background-size: 200%;
+  transition: 0.6s ease;
+  letter-spacing: 1px;
+  background-image: linear-gradient(to left,$rosa,$morado,$rosa);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+a{
+  text-decoration: none;
+}
+.cta:hover{
+  background-position: right;
+}
+@include phone{
+  .cta{
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
+// page not found
+.notfound{
+  padding-top: 50px;
+  width: 50%;
+  img{
+    width: 100%;
+  }
+  h1{
+    font-family: $primaryfont;
+  }
+}
+.ipadnav{
+  font-family: $primaryfont;
+  font-size: 21px;
+  a{
+    padding-right: 20px;
+    color: $morado;
+  }
+  a:hover{
+    color: $rosa;
+  }
+  @include phone{
+    display: none;
+  }
+  @include desktop{
+    display: none;
+  }
+  @include ipad{
+    display: block;
+    position: fixed;
+    top: 20px;
+  }
+}

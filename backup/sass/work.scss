@@ -1,0 +1,30 @@
+// sass --watch sass/work.scss:css/work.css
+@import 'mixins';
+
+.workcontent{
+    width: 90%;
+    margin-top: 50px;
+    font-family: $primaryfont;
+    h1{
+        margin-bottom: 20px;
+    }
+    img{
+        width: 100%;
+    }
+    @include ipad{
+        padding-top: 20px;
+      }
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
+    column-gap: 20px;
+    row-gap: 40px;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    h3{
+        font-family: $lightfont;
+    }
+}

@@ -1,0 +1,137 @@
+// sass --watch sass/about.scss:css/about.css
+@import 'mixins';
+
+.aboutcontent{
+    font-family: $primaryfont;
+    margin-top: 50px;
+    p{
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    h1{
+        margin-bottom: 20px;
+    }
+    h2{
+        letter-spacing: 2px;
+    }
+    svg{
+        fill: $azul;
+        stroke: $azul;
+        width: 15px;
+    }
+    svg:hover{
+        stroke: $rosa;
+    }
+    .download{
+        text-decoration: none;
+        color: $morado;
+        padding: 10px;
+    }
+    .download:hover{
+        color: $rosa;
+    }
+    @include desktop{
+        width: 90%;
+    }
+    @include ipad{
+        padding-top: 20px;
+      }
+}
+.resume{
+    margin-bottom: 20px;
+}
+.process{
+    margin-bottom: 20px;
+    h2{
+        margin-bottom: 10px;
+    }
+    li{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 15px;
+    }
+    @include desktop{
+        margin-top: 100px;
+        margin-bottom: 40px;
+    }
+    .limage{
+        float: right;
+        width: 25%;
+        img{
+            width: 100%;
+        }
+        @include phone{
+            width: 100%;
+        }
+    }
+    .rimage{
+        padding-top: 20px;
+    }
+}
+.center2{
+    text-align: center;
+}
+.skillcontainer{
+    margin-bottom: 20px;
+    padding: 0px;
+    h3{
+        letter-spacing: 1px;
+    }
+    ul{
+        margin-bottom: 20px;
+    }
+    li{
+        list-style: none;
+        padding-top: 10px;
+    }
+    @include desktop{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        h3{
+            margin-bottom: 10px;
+        }
+        ul{
+            margin-bottom: 20px;
+        }
+    }
+    @include ipad{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        h3{
+            margin-bottom: 10px;
+        }
+        ul{
+            margin-bottom: 20px;
+        }
+    }
+}
+.containercenter{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+    @include desktop{
+        width: 60%;
+        margin-top: 20px;
+    }
+}
+.noleft{
+    clear: both;
+}
+.resume{
+    margin-bottom: 20px;
+    svg{
+        fill: white;
+        stroke: $azul;
+        width: 15px;
+    }
+    svg:hover{
+        stroke: $rosa;
+    }
+}

@@ -1,0 +1,71 @@
+.caselogodd {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.caselogodd img {
+  margin: 0 auto;
+  width: 200px;
+  margin: 20px;
+}
+@media (max-width: 800px) {
+  .caselogodd img {
+    width: 80%;
+    padding: 20px;
+  }
+}
+
+.colors #ddlight {
+  color: #69DDD0;
+}
+.colors #ddlight .circle {
+  background: #69DDD0;
+}
+.colors #ddhover {
+  color: #01766D;
+}
+.colors #ddhover .circle {
+  background: #01766D;
+}
+.colors #dd {
+  color: #1FA397;
+}
+.colors #dd .circle {
+  background: #1FA397;
+}
+
+.casefontsdd {
+  text-align: center;
+}
+.casefontsdd h3 {
+  padding: 10px;
+}
+.casefontsdd .abril {
+  font-family: "Abril Fatface", cursive;
+}
+.casefontsdd .open {
+  font-family: "Open Sans", sans-serif;
+}
+.casefontsdd .fontcontainer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 10px;
+}
+@media (max-width: 800px) {
+  .casefontsdd .fontcontainer {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 1300px) {
+  .casefontsdd {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/*# sourceMappingURL=diverse.css.map */

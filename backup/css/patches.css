@@ -1,0 +1,292 @@
+.marbottom {
+  margin-bottom: 20px;
+}
+
+.content {
+  font-family: "geomanistregular";
+}
+
+.casestudy h3 {
+  font-size: 24px;
+}
+@media (max-width: 800px) {
+  .casestudy h3 {
+    font-size: 24px;
+  }
+}
+.casestudy p {
+  font-size: 21px;
+  line-height: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.caselogo {
+  background-color: #F9F9FF;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.caselogo img {
+  margin: 0 auto;
+  width: 300px;
+  margin-top: 20px;
+}
+@media (max-width: 800px) {
+  .caselogo img {
+    width: 100%;
+  }
+}
+
+.casespecial li {
+  text-decoration: none;
+  list-style: none;
+  font-family: "geomanistlight";
+  font-size: 21px;
+}
+
+.caseproducts {
+  background-color: #EDEFF1;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.caseproducts .product {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.caseproducts .product img {
+  margin: 20px;
+  width: 400px;
+}
+@media (max-width: 800px) {
+  .caseproducts .product img {
+    width: 300px;
+  }
+}
+@media (min-width: 1300px) {
+  .caseproducts {
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .casecolors {
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+.colors {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.colors .color {
+  padding: 10px;
+}
+.colors .color p {
+  text-align: center;
+  padding: 5px;
+}
+.colors .circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background: #2A3380;
+}
+@media (max-width: 800px) {
+  .colors .circle {
+    width: 50px;
+    height: 50px;
+  }
+}
+.colors .square {
+  width: 100px;
+  height: 100px;
+  border-radius: 0px;
+  background: #2A3380;
+}
+@media (max-width: 800px) {
+  .colors .square {
+    width: 50px;
+    height: 50px;
+  }
+}
+.colors #blue {
+  color: #2A3380;
+}
+.colors #earth {
+  color: #C97E09;
+}
+.colors #earth .circle {
+  background: #C97E09;
+}
+.colors #ground {
+  color: #C5AB8F;
+}
+.colors #ground .circle {
+  background: #C5AB8F;
+}
+.colors #path {
+  color: #E9DFD4;
+}
+.colors #path .circle {
+  background: #E9DFD4;
+}
+.colors #spacewhite {
+  color: gray;
+}
+.colors #spacewhite .circle {
+  background: #F9F9FF;
+}
+.colors #wind {
+  color: #EDEFF1;
+}
+.colors #wind .circle {
+  background: #EDEFF1;
+}
+.colors #air {
+  color: #EBEAE3;
+}
+.colors #air .circle {
+  background: #EBEAE3;
+}
+
+.intro a {
+  color: #0D0745;
+  font-size: 21px;
+  padding-right: 20px;
+}
+.intro a:hover {
+  color: #FF9190;
+}
+@media (max-width: 1300px) and (min-width: 800px) {
+  .intro {
+    margin-top: 50px;
+    font-size: 36px;
+  }
+}
+@media (min-width: 1300px) {
+  .intro h1 {
+    font-size: 80px;
+    margin-top: 50px;
+  }
+}
+.intro img {
+  height: 60vh;
+  object-fit: cover;
+  object-position: top;
+}
+@media (max-width: 800px) {
+  .intro img {
+    height: auto;
+  }
+}
+
+.figma iframe {
+  width: 100%;
+}
+@media (min-width: 1300px) {
+  .figma {
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+.summary .resume a {
+  color: #0D0745;
+  font-size: 21px;
+}
+.summary .resume a:hover {
+  color: #FF9190;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+.summary p {
+  font-size: 21px;
+  font-family: "geomanistlight";
+}
+@media (max-width: 800px) {
+  .summary {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 1300px) {
+  .summary {
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+.casefonts {
+  background-color: #F9F9FF;
+  border: 20px solid #F9F9FF;
+}
+.casefonts h3 {
+  background-color: #F9F9FF;
+  padding: 5px;
+}
+.casefonts h1 {
+  font-family: "Unica One", cursive;
+}
+.casefonts p {
+  font-family: "Crimson Text", serif;
+}
+.casefonts .fontcontainer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 10px;
+}
+@media (max-width: 800px) {
+  .casefonts .fontcontainer {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 1300px) {
+  .casefonts {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.more h2 {
+  padding: 15px;
+  letter-spacing: 2px;
+  font-family: "geomanistlight";
+}
+
+.casesocial {
+  padding-top: 20px;
+}
+@media (min-width: 1300px) {
+  .casesocial {
+    margin-bottom: 50px;
+  }
+  .casesocial p {
+    margin-bottom: 50px;
+  }
+}
+
+/*# sourceMappingURL=patches.css.map */

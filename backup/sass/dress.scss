@@ -1,0 +1,143 @@
+// sass --watch sass/dress.scss:css/dress.css
+@import 'mixins';
+
+.caselogo4{
+    background-color:$thedressblack;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: white;
+    img{
+        margin: 0 auto;
+        width: 200px;
+        margin:20px;
+        @include phone{
+            width: 80%;
+            padding: 20px;
+        }
+    }
+}
+.colors{ 
+    #thedresswhite{
+        .square{
+            background: $thedresswhite;
+        }
+        color: $thedressblack;
+    }
+    #thedressyellow{
+        .square{
+            background: $thedressyellow;
+        }
+        color: $thedressyellow;
+    }
+    #thedress{
+        .square{
+            background: $thedress;
+        }
+        color: $thedress;
+    }
+    #thedressgreen{
+        .square{
+            background: $thedressgreen;
+        }
+        color: $thedressgreen;
+    }
+    #thedressmagenta{
+        .square{
+            background: $thedressmagenta;
+        }
+        color: $thedressmagenta;
+    }
+    #thedressred{
+        .square{
+            background: $thedresshover;
+        }
+        color: $thedresshover;
+    }
+    #thedressblue{
+        .square{
+            background: $thedressblue;
+        }
+        color: $thedressblue;
+    }
+    #thedresspurple{
+        .square{
+            background: $thedresspurple;
+        }
+        color: $thedresspurple;
+    }
+    #thedressblack{
+        .square{
+            background: $thedressblack;
+        }
+        color: $thedressblack;
+    }
+}
+.intro{
+    a{
+        color: $morado;
+        font-size: 21px;
+        padding-right: 20px;
+    }
+    a:hover{
+        color: $rosa;
+    }
+    @include ipad{
+        margin-top: 50px;
+        font-size: 36px;
+    }
+    @include desktop{
+        h1{
+            font-size: 80px;
+            margin-top: 50px;
+        }
+    }
+    img{
+        height: 60vh;
+        object-fit: cover;
+        object-position:top;
+        @include phone{
+            height: auto;
+        }
+    }
+}
+.casefonts4{
+    h3{
+        background-color: $secrethover;
+        padding: 10px;
+    }
+    .oswald{
+        font-family: 'Oswald', sans-serif;
+    }
+    .fontcontainer{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:15px;
+        padding: 10px;
+        @include phone{
+            grid-template-columns: 1fr;
+        }
+    }
+    @include desktop{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+.col2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap:20px;
+    .col{
+        .icon{
+            width: 50px;
+        }
+    }
+    @include phone{
+        grid-template-columns: 1fr;
+    }
+}
