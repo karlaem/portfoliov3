@@ -12,6 +12,11 @@
 <link rel="stylesheet" href="css/about.css">
 <link rel="stylesheet" href="css/contact.css">
 <link rel="stylesheet" href="css/patches.css">
+<link rel="stylesheet" href="css/scoop.css">
+<link rel="stylesheet" href="css/secret.css">
+<link rel="stylesheet" href="css/dress.css">
+<link rel="stylesheet" href="css/diverse.css">
+<link rel="stylesheet" href="css/lila.css">
 
 
 <!--fonts-->

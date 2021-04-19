@@ -1,0 +1,68 @@
+// sass --watch sass/diverse.scss:css/diverse.css
+@import 'mixins';
+
+.caselogodd{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    img{
+        margin: 0 auto;
+        width: 200px;
+        margin:20px;
+        @include phone{
+            width: 80%;
+            padding: 20px;
+        }
+    }
+}
+.colors{ 
+    #ddlight{
+        .circle{
+            background: $ddlight;
+        }
+        color: $ddlight;
+    }
+    #ddhover{
+        .circle{
+            background: $ddhover;
+        }
+        color: $ddhover;
+    }
+    #dd{
+        .circle{
+            background: $dd;
+        }
+        color: $dd;
+    }
+}
+.casefontsdd{
+    text-align: center;
+    h3{
+        padding: 10px;
+    }
+    .abril{
+        font-family: 'Abril Fatface', cursive;
+        color: black;
+    }
+    .open{
+        font-family: 'Open Sans', sans-serif;
+        color: black;
+    }
+    .fontcontainer{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:15px;
+        padding: 10px;
+        @include phone{
+            grid-template-columns: 1fr;
+        }
+    }
+    @include desktop{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}

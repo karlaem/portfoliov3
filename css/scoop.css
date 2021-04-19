@@ -1,0 +1,161 @@
+.caselogo2 {
+  background-color: #F4F0ED;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.caselogo2 img {
+  margin: 0 auto;
+  width: 300px;
+  margin-top: 20px;
+}
+@media (max-width: 800px) {
+  .caselogo2 img {
+    width: 100%;
+  }
+}
+
+.colors #green {
+  color: #A5C379;
+}
+.colors #green .circle {
+  background: #A5C379;
+}
+.colors #pink {
+  color: #FFA8A7;
+}
+.colors #pink .circle {
+  background: #FFA8A7;
+}
+.colors #orange {
+  color: #F4C68A;
+}
+.colors #orange .circle {
+  background: #F4C68A;
+}
+.colors #bluescoop {
+  color: #4AB0B2;
+}
+.colors #bluescoop .circle {
+  background: #4AB0B2;
+}
+.colors #yellow {
+  color: #F9EEA0;
+}
+.colors #yellow .circle {
+  background: #F9EEA0;
+}
+.colors #brown {
+  color: #A47A53;
+}
+.colors #brown .circle {
+  background: #A47A53;
+}
+
+.intro a {
+  color: #0D0745;
+  font-size: 21px;
+  padding-right: 20px;
+}
+.intro a:hover {
+  color: #FF9190;
+}
+@media (max-width: 1300px) {
+  .intro {
+    margin-top: 50px;
+    font-size: 36px;
+  }
+}
+@media (min-width: 800px) {
+  .intro h1 {
+    font-size: 80px;
+    margin-top: 50px;
+  }
+}
+.intro img {
+  height: 60vh;
+  object-fit: cover;
+  object-position: top;
+}
+@media (max-width: 800px) {
+  .intro img {
+    height: auto;
+  }
+}
+
+.casefonts2 {
+  text-align: center;
+}
+.casefonts2 h3 {
+  background-color: #F4F0ED;
+  padding: 10px;
+}
+.casefonts2 .oxygen {
+  font-family: "Oxygen", sans-serif;
+  color: black;
+}
+.casefonts2 .aleo {
+  font-family: "Aleo", serif;
+  color: black;
+}
+.casefonts2 .fontcontainer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 10px;
+}
+@media (max-width: 800px) {
+  .casefonts2 .fontcontainer {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 800px) {
+  .casefonts2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.spoon {
+  object-fit: cover;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.col3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.col3 img {
+  width: 100%;
+}
+
+.casepack {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.casepack p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media (min-width: 800px) {
+  .casepack {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 800px) {
+  .casesticker {
+    padding-bottom: 50px;
+  }
+}
+
+/*# sourceMappingURL=scoop.css.map */
