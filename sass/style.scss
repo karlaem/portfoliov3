@@ -273,9 +273,8 @@ html.transition, html.transition *, html.transition *:before, html.transition *:
 
   //homepage
 .container{
-    overflow: auto;
-    background-image: radial-gradient(circle farthest-corner at 15px 15px, rgba(244, 186, 149, 0.8) 0%, rgba(215, 215, 215, 0) 500px),radial-gradient(circle closest-side at 1700px 1000px, rgba(19, 13, 111, 0.8) 0%, rgba(215, 215, 215, 0) 800px),radial-gradient(circle closest-side at 900px 1850px, rgba(255, 145, 144, 0.8) 0%, rgba(215, 215, 215, 0) 600px),radial-gradient(circle closest-side at 500px 2300px, rgba(19, 13, 111, 0.8)  0%, rgba(215, 215, 215, 0) 600px);
-}
+    background-image: radial-gradient(circle farthest-corner at 15px 15px, rgba(244, 186, 149, 0.8) 0%, rgba(215, 215, 215, 0) 500px),radial-gradient(circle closest-side at 1700px 1000px, rgba(19, 13, 111, 0.8) 0%, rgba(215, 215, 215, 0) 800px),radial-gradient(circle closest-side at 900px 1850px, rgba(255, 145, 144, 0.8) 0%, rgba(215, 215, 215, 0) 600px),radial-gradient(circle closest-side at 500px 2300px, rgba(19, 13, 111, 0.8)  0%, rgba(215, 215, 215, 0) 600px), radial-gradient(circle at bottom, rgba(94, 114, 235, 0.7) 0%, rgba(215, 215, 215, 0) 200px);
+  }
 .hero{
     height: 100vh;
     position: relative;
@@ -311,7 +310,7 @@ html.transition, html.transition *, html.transition *:before, html.transition *:
         font-size: 1.2rem;
     }
     .container{
-        background-image: radial-gradient(circle farthest-corner at 15px 15px, rgba(244, 186, 149, 0.8) 0%, rgba(215, 215, 215, 0) 300px),radial-gradient(circle closest-side at 600px 700px, rgba(19, 13, 111, 0.8) 0%, rgba(215, 215, 215, 0) 600px),radial-gradient(circle closest-side at 300px 3000px, rgba(255, 145, 144, 0.8) 0%, rgba(215, 215, 215, 0) 500px),radial-gradient(circle closest-side at 100px 3600px, rgba(19, 13, 111, 0.8)  0%, rgba(215, 215, 215, 0) 500px);
+        background-image: radial-gradient(circle farthest-corner at 15px 15px, rgba(244, 186, 149, 0.8) 0%, rgba(215, 215, 215, 0) 300px),radial-gradient(circle closest-side at 600px 700px, rgba(19, 13, 111, 0.8) 0%, rgba(215, 215, 215, 0) 600px),radial-gradient(circle closest-side at 300px 3000px, rgba(255, 145, 144, 0.8) 0%, rgba(215, 215, 215, 0) 500px),radial-gradient(circle closest-side at 100px 3600px, rgba(19, 13, 111, 0.8)  0%, rgba(215, 215, 215, 0) 500px),radial-gradient(circle at bottom, rgba(94, 114, 235, 0.7) 0%, rgba(215, 215, 215, 0) 200px);
     }
     .switchcontainer{
      display: none;
@@ -324,4 +323,48 @@ html.transition, html.transition *, html.transition *:before, html.transition *:
     .herotext .tinytext{
         font-size: 1.2rem;
     }
+}
+footer{
+  width: 100%;
+  display: inline-block;
+  margin-top: 50px;
+}
+.footernav{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+align-content: center;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.col-3{
+  text-align: center;
+  .logo2{
+    margin: 0 auto;
+    h1{
+      background: url("../imgs/logows.svg");
+      background-size: cover;
+      width: 50px;
+      height: 50px;
+      text-indent: -9999px;
+    }
+    h1 a {
+      background-image: url("../imgs/logows.svg");
+      background-size: cover;
+      color: white;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+  a{
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 5px;
+  }
+  a:hover{
+    color: $azul;
+  }
+}
+.decorfooter{
+  background-image: radial-gradient(circle at bottom, rgba(94, 114, 235, 0.7) 0%, rgba(215, 215, 215, 0) 150px);
 }

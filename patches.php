@@ -151,5 +151,12 @@
 // Navigation
 include("includes/nav.php");
 ?>   
+<div class="decorfooter">
+<?php
+// footer
+include("includes/footer.php");
+?>  
+</div>
+ 
 </body>
 </html>

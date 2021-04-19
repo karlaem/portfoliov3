@@ -141,10 +141,13 @@ include("classes/Projectlist.php");
                 <img  src="imgs/hand.gif" alt="hand with flower gif animation made by karla">
                 </div><!--.right-->
             </div><!--.contact-->
-
+            <?php
+            // footer
+            include("includes/footer.php");
+            ?>   
         </div><!--.margins-->
     </div>
-    <?php
+<?php
 // Navigation
 $homeActive = "active";
 include("includes/nav.php");
