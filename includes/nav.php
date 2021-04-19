@@ -3,8 +3,8 @@
 $arrMenu = array(
     array('menu'=>'Home', 'link'=>'index.php', 'datanav' => 'home'),
     array('menu'=>'Work', 'link'=>'#work', 'datanav' => 'work'),
-    array('menu'=>'About', 'link'=>'about.php', 'datanav' => 'about'),
-    array('menu'=>'Contact', 'link'=>'contact.php', 'datanav' => 'contact'),
+    array('menu'=>'About', 'link'=>'#about', 'datanav' => 'about'),
+    array('menu'=>'Contact', 'link'=>'#contact', 'datanav' => 'contact'),
 );
 // active
 $homeActive = (isset($homeActive)) ? $homeActive : "";
@@ -46,8 +46,8 @@ $contactActive = (isset($contactActive)) ? $contactActive : "";
             <div class="nav">
                 <a href="index.php" data-nav="home">Home</a>
                 <a href="#work" data-nav="work">Work</a>
-                <a href="about.php" data-nav="about">About</a>
-                <a href="contact.php" data-nav="contact" class="highlighted">Contact</a>
+                <a href="#about" data-nav="about">About</a>
+                <a href="#contact" data-nav="contact" class="highlighted">Contact</a>
             </div>
         </div> 
     </div><!--.nav-->

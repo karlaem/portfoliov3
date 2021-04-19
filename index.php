@@ -25,7 +25,7 @@ include("classes/Projectlist.php");
                 <div class="herotext">
                     <h1 class="tinytext">Hello I'm Karla Mercado</h1>
                     <h1>I’m a creative front-end developer looking to work at an agency and eager to bring projects to life through thoughtful design solutions.</h1>
-                    <a  href="#" class="cta">Contact me</a>
+                    <a  href="#contact" class="cta">Contact me</a>
                     <img class="rightimg" src="imgs/Phone.gif" alt="hand with phone gif animation made by karla">
                 </div>
             </div><!--.hero-->
@@ -97,32 +97,29 @@ include("classes/Projectlist.php");
                         <form id="contactform"  method="post" action="sendemail.php" enctype="multipart/form-data" name="EmailForm">
                             <div class="fieldgroup required">
                                 <input type="text" id="name" name="name" placeholder="Name">
-                                <div class="popup">   
-                                    <div class="arrow-up"></div>             
+                                <div class="popup">        
                                     <p>Write your name</p>
                                 </div>   
                             </div><!--.fieldgroup-->
 
                             <div class="fieldgroup required">
                                 <input type="text" id="email" name="email" placeholder="Email">
-                                <div class="popup">         
-                                    <div class="arrow-up"></div>          
+                                <div class="popup">              
                                     <p>Write your email</p>
                                 </div>   
                             </div><!--.fieldgroup-->
 
                             <div class="fieldgroup">
                                 <select name="subject">
-                                <option value="ksubject">Subject</option>
-                                    <option value="knowMore">Know more information</option>
-                                    <option value="resume">Ask for resume</option>
-                                    <option value="hire">Hire me &#128516;</option>
-                                    <option value="tips">Tips on coding, art or design</option>
-                                    <option value="question">Questions</option>
-                                <option value="chat">Chat</option>
+                                    <option class="options" value="ksubject">Subject</option>
+                                    <option class="options" value="knowMore">Know more information</option>
+                                    <option class="options" value="resume">Ask for resume</option>
+                                    <option class="options" value="hire">Hire me &#128516;</option>
+                                    <option class="options" value="tips">Tips on coding, art or design</option>
+                                    <option class="options" value="question">Questions</option>
+                                    <option class="options" value="chat">Chat</option>
                                 </select>
-                                <div class="popup">  
-                                    <div class="arrow-up"></div>                
+                                <div class="popup">                
                                     <p>Write your name</p>
                                 </div>   
                             </div><!--.fieldgroup-->
@@ -130,8 +127,7 @@ include("classes/Projectlist.php");
                             <div class="fieldgroup required">
         
                                 <textarea id="msg" name="msg" placeholder="Write something.."></textarea>
-                                <div class="popup">   
-                                    <div class="arrow-up"></div>               
+                                <div class="popup">               
                                     <p>Write your Message</p>
                                 </div>  
                             </div><!--.fieldgroup-->

@@ -274,7 +274,7 @@ html.transition, html.transition *, html.transition *:before, html.transition *:
   //homepage
 .container{
     overflow: auto;
-    background-image: radial-gradient(circle farthest-corner at 15px 15px, rgba(244, 186, 149, 0.8) 0%, rgba(215, 215, 215, 0) 500px),radial-gradient(circle closest-side at 1600px 1000px, rgba(19, 13, 111, 0.8) 0%, rgba(215, 215, 215, 0) 1100px);
+    background-image: radial-gradient(circle farthest-corner at 15px 15px, rgba(244, 186, 149, 0.8) 0%, rgba(215, 215, 215, 0) 500px),radial-gradient(circle closest-side at 1700px 1000px, rgba(19, 13, 111, 0.8) 0%, rgba(215, 215, 215, 0) 800px),radial-gradient(circle closest-side at 900px 1850px, rgba(255, 145, 144, 0.8) 0%, rgba(215, 215, 215, 0) 600px),radial-gradient(circle closest-side at 500px 2300px, rgba(19, 13, 111, 0.8)  0%, rgba(215, 215, 215, 0) 600px);
 }
 .hero{
     height: 100vh;
@@ -311,7 +311,7 @@ html.transition, html.transition *, html.transition *:before, html.transition *:
         font-size: 1.2rem;
     }
     .container{
-        background-image: radial-gradient(circle farthest-corner at 15px 15px, rgba(244, 186, 149, 0.8) 0%, rgba(215, 215, 215, 0) 300px),radial-gradient(circle closest-side at 600px 700px, rgba(19, 13, 111, 0.8) 0%, rgba(215, 215, 215, 0) 600px);
+        background-image: radial-gradient(circle farthest-corner at 15px 15px, rgba(244, 186, 149, 0.8) 0%, rgba(215, 215, 215, 0) 300px),radial-gradient(circle closest-side at 600px 700px, rgba(19, 13, 111, 0.8) 0%, rgba(215, 215, 215, 0) 600px),radial-gradient(circle closest-side at 300px 3000px, rgba(255, 145, 144, 0.8) 0%, rgba(215, 215, 215, 0) 500px),radial-gradient(circle closest-side at 100px 3600px, rgba(19, 13, 111, 0.8)  0%, rgba(215, 215, 215, 0) 500px);
     }
     .switchcontainer{
      display: none;
