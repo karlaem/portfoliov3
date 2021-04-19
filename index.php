@@ -76,7 +76,8 @@ include("classes/Projectlist.php");
             </div><!--.work-->
 
             <div class="about" id="about">
-                <div class="left"></div>
+                <div class="left">
+                </div><!--.left-->
                 <div class="right">
                     <h1>About me</h1>
                     <p>Born in Monterrey Mexico I am passionate about art and design, I am dedicated, creative, and self-driven. I believe design is about equity and accessibility, it is for everyone to enjoy. I learned web development and interactive design at Vanarts, I became interested in programming after graduating from Digital Art and Animation at Tecnologico de Monterrey. </p>
@@ -87,7 +88,7 @@ include("classes/Projectlist.php");
                         <a class="links" href="https://github.com/karlaem" target="_blank">Github</a>  
                         <a class="links" href="https://mail.google.com/mail/?view=cm&fs=1&to=karlaest20@gmail.com&su=Contact&body=Message" target="_blank">Mail</a>
                     </div><!--.social-->
-                </div><!--.left-->
+                </div><!--.right-->
             </div><!--.about-->
 
             <div class="contact" id="contact">
@@ -136,7 +137,9 @@ include("classes/Projectlist.php");
                         </form>
                     </div>
                 </div><!--.left-->
-                <div class="right"></div><!--.right-->
+                <div class="right">
+                <img  src="imgs/hand.gif" alt="hand with flower gif animation made by karla">
+                </div><!--.right-->
             </div><!--.contact-->
 
         </div><!--.margins-->

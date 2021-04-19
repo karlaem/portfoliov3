@@ -2,9 +2,9 @@
 // array of navigation
 $arrMenu = array(
     array('menu'=>'Home', 'link'=>'index.php', 'datanav' => 'home'),
-    array('menu'=>'Work', 'link'=>'#work', 'datanav' => 'work'),
-    array('menu'=>'About', 'link'=>'#about', 'datanav' => 'about'),
-    array('menu'=>'Contact', 'link'=>'#contact', 'datanav' => 'contact'),
+    array('menu'=>'Work', 'link'=>'index.php#work', 'datanav' => 'work'),
+    array('menu'=>'About', 'link'=>'index.php#about', 'datanav' => 'about'),
+    array('menu'=>'Contact', 'link'=>'index.php#contact', 'datanav' => 'contact'),
 );
 // active
 $homeActive = (isset($homeActive)) ? $homeActive : "";
@@ -45,9 +45,9 @@ $contactActive = (isset($contactActive)) ? $contactActive : "";
         <div class="menuRegular">
             <div class="nav">
                 <a href="index.php" data-nav="home">Home</a>
-                <a href="#work" data-nav="work">Work</a>
-                <a href="#about" data-nav="about">About</a>
-                <a href="#contact" data-nav="contact" class="highlighted">Contact</a>
+                <a href="index.php#work" data-nav="work">Work</a>
+                <a href="index.php#about" data-nav="about">About</a>
+                <a href="index.php#contact" data-nav="contact" class="highlighted">Contact</a>
             </div>
         </div> 
     </div><!--.nav-->

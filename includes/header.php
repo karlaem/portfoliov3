@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="css/work.css">
 <link rel="stylesheet" href="css/about.css">
 <link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/patches.css">
 
 
 <!--fonts-->
