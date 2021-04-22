@@ -1,5 +1,4 @@
 .workcontent {
-  width: 90%;
   font-family: "geomanistregular";
   margin: 0 auto;
   margin-top: 20px;
@@ -19,9 +18,41 @@
   }
 }
 
+.cards2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 40px;
+}
+.cards2 a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.cards2 h3 {
+  font-family: "geomanistregular";
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.cards2 p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: "geomanistlight";
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 1300px) {
+  .cards2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 800px) {
+  .cards2 {
+    grid-template-columns: 1fr;
+  }
+}
+
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   column-gap: 20px;
   row-gap: 40px;
 }

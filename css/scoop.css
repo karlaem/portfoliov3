@@ -54,37 +54,6 @@
   background: #A47A53;
 }
 
-.intro a {
-  color: #0D0745;
-  font-size: 21px;
-  padding-right: 20px;
-}
-.intro a:hover {
-  color: #FF9190;
-}
-@media (max-width: 1300px) {
-  .intro {
-    margin-top: 50px;
-    font-size: 36px;
-  }
-}
-@media (min-width: 800px) {
-  .intro h1 {
-    font-size: 80px;
-    margin-top: 50px;
-  }
-}
-.intro img {
-  height: 60vh;
-  object-fit: cover;
-  object-position: top;
-}
-@media (max-width: 800px) {
-  .intro img {
-    height: auto;
-  }
-}
-
 .casefonts2 {
   text-align: center;
 }

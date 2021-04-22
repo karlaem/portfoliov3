@@ -39,14 +39,14 @@ include("classes/Projectlist.php");
             <div id="work" class="page">
                 <div class="content">
                     <div class="workcontent">
-                        <div class="cards">
+                        <div class="cards2">
                             <?php
                             $category = isset($_GET['category']) ? $_GET['category'] : '1';                     
                             //show a list of projects
                             foreach(Projects::getCategory($category) as $value) {
                             $link = isset($value->link) ? $value->link : '#';  
                             ?>
-                            <div class='card'>
+                            <div class='card2'>
                                 <?php
                                 if($value->video){
                                 ?>

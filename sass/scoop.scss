@@ -57,34 +57,7 @@
     }
    
 }
-.intro{
-    a{
-        color: $morado;
-        font-size: 21px;
-        padding-right: 20px;
-    }
-    a:hover{
-        color: $rosa;
-    }
-    @include ipad{
-        margin-top: 50px;
-        font-size: 36px;
-    }
-    @include desktop{
-        h1{
-            font-size: 80px;
-            margin-top: 50px;
-        }
-    }
-    img{
-        height: 60vh;
-        object-fit: cover;
-        object-position:top;
-        @include phone{
-            height: auto;
-        }
-    }
-}
+
 .casefonts2{
     text-align: center;
     h3{
