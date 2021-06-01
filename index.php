@@ -12,12 +12,12 @@ include("classes/Projectlist.php");
     ?>
     <title>Karla Mercado Web Developer and Front End Designer Portfolio Home</title>
 </head>
-<body> 
+<body class="bodyDark"> 
     <div class="container">
         <div class="margins">
             <!--home-->
             <div class="switchcontainer">
-                <input class="container_toggle" type="checkbox" id="switch" name="mode"  onclick="myFunction()">
+                <input class="container_toggle" type="checkbox" id="switch" name="mode"  onclick="myFunction2()">
                 <label class="slabel" for="switch">Toggle</label>
             </div>
             <div id="home" class="hero">

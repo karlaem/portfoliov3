@@ -1,6 +1,6 @@
 <footer>
 <div class="footernav">
-    <div class="col-3">
+    <div class="col-3 phonehide">
         <a href="index.php" data-nav="home">Home</a>
         <a href="index.php#work" data-nav="work">Work</a>
         <a href="index.php#about" data-nav="about">About</a>

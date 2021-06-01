@@ -2,3 +2,7 @@
     transition: background 500ms;
     background-color: black;
 }
+.light-mode {
+    transition: background 500ms;
+    background-color:  #D7D7D7;
+}

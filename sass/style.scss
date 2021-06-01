@@ -8,60 +8,67 @@
   font-family: $primaryfont;
 }
 body{
-    transition: background 500ms;
-    background-color: #D7D7D7;
+  transition: background 500ms;
+  background-color: #D7D7D7;
 }
+.bodyDark{
+  transition: background 500ms;
+  background-color: black;
+}
+
 .margins{
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 // darkmode
 .container_toggle{
-    height: 0;
-    width: 0;
-    opacity: 0;
-    /*visibility: hidden;*/
+  height: 0;
+  width: 0;
+  opacity: 0;
+  /*visibility: hidden;*/
 }
 .slabel{
-    cursor: pointer;
-    text-indent: -9999px;
-    width: 55px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border-radius: 100px;
-    position: relative;
-    background: black;
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 55px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  position: relative;
+  //background: black;
+  background: #D7D7D7;
 }
 .slabel:after {
-    content: '';
-    background: #D7D7D7;
-    width: 20px;
-    height: 20px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    position: absolute;
-    top: 5px;
-    left: 4px;
-    transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
+  content: '';
+  //background: #D7D7D7;
+  background: black;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
     
 }
 input:checked + .slabel {
-    background: #FEC195;
+  background: black;
 }
 input:checked + .slabel:after {
-    left: calc(100% - 5px);
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
-    transform: translateX(-100%);
-    background: black;
+  left: calc(100% - 5px);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+  background: #FEC195;
 }
 html.transition, html.transition *, html.transition *:before, html.transition *:after {
     transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 420ms !important;
@@ -71,39 +78,39 @@ html.transition, html.transition *, html.transition *:before, html.transition *:
     position: absolute;
     right: 30px;
 }
-  /*mobile logo*/
-  .tinylogo img{
-    width: 30px;
-    position: absolute;
-    top: 20px;
-    left: 50%; 
-    transform: translate( -50%); 
-    @include desktop{
-      display: none;
-    }
-  }
-  /*logo*/
-  .logo {
-    position: absolute;
-    top: 20px;
-    left: 50%; 
-    transform: translate( -50%); 
-    width: 100px;
+/*mobile logo*/
+.tinylogo img{
+  width: 30px;
+  position: absolute;
+  top: 20px;
+  left: 50%; 
+  transform: translate( -50%); 
+  @include desktop{
     display: none;
-    h1{
-      background: url("../imgs/logows.svg");
-      background-size: cover;
-      width: 50px;
-      height: 50px;
-      text-indent: -9999px;
-    }
-    h1 a {
-      background-image: url("../imgs/logows.svg");
-      background-size: cover;
-    }
-    @include desktop{
-      display: block;
-    }
+  }
+}
+/*logo*/
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 50%; 
+  transform: translate( -50%); 
+  width: 100px;
+  display: none;
+  h1{
+    background: url("../imgs/logows.svg");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+  }
+  h1 a {
+    background-image: url("../imgs/logows.svg");
+    background-size: cover;
+  }
+  @include desktop{
+    display: block;
+  }
 }
 
 // navigation
@@ -273,56 +280,66 @@ html.transition, html.transition *, html.transition *:before, html.transition *:
 
   //homepage
 .container{
-    background-image: radial-gradient(circle farthest-corner at 15px 15px, rgba(244, 186, 149, 0.8) 0%, rgba(215, 215, 215, 0) 500px),radial-gradient(circle closest-side at 1700px 1000px, rgba(19, 13, 111, 0.8) 0%, rgba(215, 215, 215, 0) 800px),radial-gradient(circle closest-side at 900px 1850px, rgba(255, 145, 144, 0.8) 0%, rgba(215, 215, 215, 0) 600px),radial-gradient(circle closest-side at 500px 2300px, rgba(19, 13, 111, 0.8)  0%, rgba(215, 215, 215, 0) 600px), radial-gradient(circle at bottom, rgba(94, 114, 235, 0.7) 0%, rgba(215, 215, 215, 0) 200px);
-  }
+  min-height: 100%;
+
+  background-image: 
+  radial-gradient(circle farthest-corner at 15px 15px, rgba(244, 186, 149, 0.8) 0%, rgba(215, 215, 215, 0) 500px),
+  radial-gradient(circle  at 1700px 1000px, rgba(19, 13, 111, 0.8) 0%, rgba(215, 215, 215, 0) 800px),
+  radial-gradient(circle  at 900px 1850px, rgba(255, 145, 144, 0.8) 0%, rgba(215, 215, 215, 0) 600px),
+  radial-gradient(circle  at 500px 2300px, rgba(19, 13, 111, 0.8)  0%, rgba(215, 215, 215, 0) 600px), 
+  radial-gradient(circle at bottom, rgba(94, 114, 235, 0.7) 0%, rgba(215, 215, 215, 0) 200px);
+
+  background-size: 100%; 
+  background-repeat: no-repeat;
+}
 .hero{
-    height: 100vh;
-    position: relative;
+  height: 100vh;
+  position: relative;
 }
 .herotext{
-    color: white;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+  color: white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .herotext h1{
-    font-family: 'Antic Didone', serif;
-    font-size: 3rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
+  font-family: 'Antic Didone', serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 .herotext .tinytext{
-    font-family: "geomanistregular";
-    font-size: 1.8rem;
+  font-family: "geomanistregular";
+  font-size: 1.8rem;
 }
 .rightimg{
-    position: absolute;
-    width: 300px;
-    right: 0px;
+  position: absolute;
+  width: 300px;
+  right: 0px;
 }
 @include phone{
-    .herotext h1{
-        font-size:1rem;
-    }
-    .herotext .tinytext{
-        font-size: 1.2rem;
-    }
-    .container{
-        background-image: radial-gradient(circle farthest-corner at 15px 15px, rgba(244, 186, 149, 0.8) 0%, rgba(215, 215, 215, 0) 300px),radial-gradient(circle closest-side at 600px 700px, rgba(19, 13, 111, 0.8) 0%, rgba(215, 215, 215, 0) 600px),radial-gradient(circle closest-side at 300px 3000px, rgba(255, 145, 144, 0.8) 0%, rgba(215, 215, 215, 0) 500px),radial-gradient(circle closest-side at 100px 3600px, rgba(19, 13, 111, 0.8)  0%, rgba(215, 215, 215, 0) 500px),radial-gradient(circle at bottom, rgba(94, 114, 235, 0.7) 0%, rgba(215, 215, 215, 0) 200px);
-    }
-    .switchcontainer{
-     display: none;
-    }
-}
-@include ipad{
-    .herotext h1{
-        font-size:2rem;
-    }
-    .herotext .tinytext{
-        font-size: 1.2rem;
-    }
+  .herotext{
+    padding-top: 100px;
+  }
+  .herotext h1{
+      font-size:21px;
+  }
+  .herotext .tinytext{
+      font-size: 1.2rem;
+  }
+  .container{
+      background-image: 
+      radial-gradient(circle at 15px 15px, rgba(244, 186, 149, 0.8) 0%, rgba(215, 215, 215, 0) 300px),
+      radial-gradient(circle at 600px 700px, rgba(19, 13, 111, 0.8) 0%, rgba(215, 215, 215, 0) 600px),
+      radial-gradient(circle at 300px 3000px, rgba(255, 145, 144, 0.8) 0%, rgba(215, 215, 215, 0) 500px),
+      radial-gradient(circle at 100px 3600px, rgba(19, 13, 111, 0.8)  0%, rgba(215, 215, 215, 0) 500px),
+      radial-gradient(circle at bottom, rgba(94, 114, 235, 0.7) 0%, rgba(215, 215, 215, 0) 200px);
+  }
+  .switchcontainer{
+    display: none;
+  }
 }
 footer{
   width: 100%;
@@ -336,6 +353,16 @@ flex-wrap: nowrap;
 align-content: center;
 justify-content: space-evenly;
 align-items: center;
+@include phone{
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+}
+.phonehide{
+  display: block;
+  @include phone{
+    display: none;
+  }
 }
 
 .col-3{
@@ -360,6 +387,9 @@ align-items: center;
     color: white;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 5px;
+    @include phone{
+      display: block;
+    }
   }
   a:hover{
     color: $azul;

@@ -10,6 +10,11 @@ body {
   background-color: #D7D7D7;
 }
 
+.bodyDark {
+  transition: background 500ms;
+  background-color: black;
+}
+
 .margins {
   width: 80%;
   margin: 0 auto;
@@ -34,12 +39,12 @@ body {
   -moz-border-radius: 100px;
   border-radius: 100px;
   position: relative;
-  background: black;
+  background: #D7D7D7;
 }
 
 .slabel:after {
   content: "";
-  background: #D7D7D7;
+  background: black;
   width: 20px;
   height: 20px;
   -webkit-border-radius: 50%;
@@ -52,7 +57,7 @@ body {
 }
 
 input:checked + .slabel {
-  background: #FEC195;
+  background: black;
 }
 
 input:checked + .slabel:after {
@@ -62,7 +67,7 @@ input:checked + .slabel:after {
   -ms-transform: translateX(-100%);
   -o-transform: translateX(-100%);
   transform: translateX(-100%);
-  background: black;
+  background: #FEC195;
 }
 
 html.transition, html.transition *, html.transition *:before, html.transition *:after {
@@ -297,7 +302,10 @@ a {
   }
 }
 .container {
-  background-image: radial-gradient(circle farthest-corner at 15px 15px, rgba(244, 186, 149, 0.8) 0%, rgba(215, 215, 215, 0) 500px), radial-gradient(circle closest-side at 1700px 1000px, rgba(19, 13, 111, 0.8) 0%, rgba(215, 215, 215, 0) 800px), radial-gradient(circle closest-side at 900px 1850px, rgba(255, 145, 144, 0.8) 0%, rgba(215, 215, 215, 0) 600px), radial-gradient(circle closest-side at 500px 2300px, rgba(19, 13, 111, 0.8) 0%, rgba(215, 215, 215, 0) 600px), radial-gradient(circle at bottom, rgba(94, 114, 235, 0.7) 0%, rgba(215, 215, 215, 0) 200px);
+  min-height: 100%;
+  background-image: radial-gradient(circle farthest-corner at 15px 15px, rgba(244, 186, 149, 0.8) 0%, rgba(215, 215, 215, 0) 500px), radial-gradient(circle at 1700px 1000px, rgba(19, 13, 111, 0.8) 0%, rgba(215, 215, 215, 0) 800px), radial-gradient(circle at 900px 1850px, rgba(255, 145, 144, 0.8) 0%, rgba(215, 215, 215, 0) 600px), radial-gradient(circle at 500px 2300px, rgba(19, 13, 111, 0.8) 0%, rgba(215, 215, 215, 0) 600px), radial-gradient(circle at bottom, rgba(94, 114, 235, 0.7) 0%, rgba(215, 215, 215, 0) 200px);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .hero {
@@ -333,8 +341,12 @@ a {
 }
 
 @media (max-width: 800px) {
+  .herotext {
+    padding-top: 100px;
+  }
+
   .herotext h1 {
-    font-size: 1rem;
+    font-size: 21px;
   }
 
   .herotext .tinytext {
@@ -342,20 +354,11 @@ a {
   }
 
   .container {
-    background-image: radial-gradient(circle farthest-corner at 15px 15px, rgba(244, 186, 149, 0.8) 0%, rgba(215, 215, 215, 0) 300px), radial-gradient(circle closest-side at 600px 700px, rgba(19, 13, 111, 0.8) 0%, rgba(215, 215, 215, 0) 600px), radial-gradient(circle closest-side at 300px 3000px, rgba(255, 145, 144, 0.8) 0%, rgba(215, 215, 215, 0) 500px), radial-gradient(circle closest-side at 100px 3600px, rgba(19, 13, 111, 0.8) 0%, rgba(215, 215, 215, 0) 500px), radial-gradient(circle at bottom, rgba(94, 114, 235, 0.7) 0%, rgba(215, 215, 215, 0) 200px);
+    background-image: radial-gradient(circle at 15px 15px, rgba(244, 186, 149, 0.8) 0%, rgba(215, 215, 215, 0) 300px), radial-gradient(circle at 600px 700px, rgba(19, 13, 111, 0.8) 0%, rgba(215, 215, 215, 0) 600px), radial-gradient(circle at 300px 3000px, rgba(255, 145, 144, 0.8) 0%, rgba(215, 215, 215, 0) 500px), radial-gradient(circle at 100px 3600px, rgba(19, 13, 111, 0.8) 0%, rgba(215, 215, 215, 0) 500px), radial-gradient(circle at bottom, rgba(94, 114, 235, 0.7) 0%, rgba(215, 215, 215, 0) 200px);
   }
 
   .switchcontainer {
     display: none;
-  }
-}
-@media (max-width: 1300px) {
-  .herotext h1 {
-    font-size: 2rem;
-  }
-
-  .herotext .tinytext {
-    font-size: 1.2rem;
   }
 }
 footer {
@@ -371,6 +374,21 @@ footer {
   align-content: center;
   justify-content: space-evenly;
   align-items: center;
+}
+@media (max-width: 800px) {
+  .footernav {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+}
+
+.phonehide {
+  display: block;
+}
+@media (max-width: 800px) {
+  .phonehide {
+    display: none;
+  }
 }
 
 .col-3 {
@@ -396,6 +414,11 @@ footer {
   color: white;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 5px;
+}
+@media (max-width: 800px) {
+  .col-3 a {
+    display: block;
+  }
 }
 .col-3 a:hover {
   color: #5E72EB;
